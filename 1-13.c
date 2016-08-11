@@ -4,8 +4,8 @@
 #define OUT 1
 int main() {
 	char c;
-	int i, j, num_word_length[10], num_char = 0, state;
-	for( i = 0; i < 10; i++ )
+	int i, j, num_word_length[11], num_char = 0, state;
+	for( i = 0; i < 11; i++ )
 		num_word_length[i] = 0;
 	while((c = getchar()) != EOF) {
 		if(c == ' ' || c == '\n' || c == '\t')
@@ -15,15 +15,16 @@ int main() {
 			++num_char;
 		}
 		if(state) {
-			num_word_length[numchar]++;
+			++num_word_length[num_char];
 			num_char = 0;
 		}
 	}
-	for( i = 0; i < 10; i++) {
-		for( j = 0; j < num_word_length[j]; j++)
+	for( i = 1; i < 11; i++) {
+		printf("%d\t",i);
+		for( j = 0; j < num_word_length[i]; j++) {
 			printf("X");
 		}
-		printf("\n")
+		printf("\n");
 	}
 	return 0;
 }
