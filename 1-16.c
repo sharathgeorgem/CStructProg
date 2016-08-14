@@ -11,7 +11,8 @@ int main() {
 	char longest[MAXLINE];
 	/*Many functions left*/
 	max = 0;
-	while()
+	while(1){
 
+	}
 return 0;
 }
