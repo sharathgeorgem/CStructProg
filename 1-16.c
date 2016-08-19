@@ -5,6 +5,7 @@ int getlin(char s[], int lim);
 void copy(char to[], char from[]);
 
 /*Print longest input line*/
+/*Includes two sub functions that copy one string to anotehr and another function that can calculate the number of strings entered ias input and also the length of the longest string*/
 int main() {
 	int len;
 	int max;
@@ -39,3 +40,4 @@ void copy(char to[], char from[]) {
 	while((to[i] = from[i]) != '\0')
 		++i;
 }
+/*Function needs to be modified*/
